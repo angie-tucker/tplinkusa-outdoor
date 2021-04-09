@@ -1,11 +1,11 @@
-Outdoor Wireless Example : School football stadium
+Outdoor Wireless Example : School Football Stadium
 ==================================================
 
 .. image:: /images/uc_football.png
     :width: 100%
     :align: center
 
-At the school football stadium, you may want to provide basic Internet access to all the audiences, to share the pictures or the videos. Most of the time, the football stadium is away from the office and has no network cable buried when it was built. How can we provide the network services to the bench area?
+At the high school football stadium, you may want to provide basic Internet access to all audiences for sharing event pictures, videos or for accessing online event info. Most of the time, the football stadium is away from the school office and has no network cable buried when it was built. How can we provide network services to the bench area?
 
 To the bench area
 -----------------
@@ -19,7 +19,7 @@ Separate the bench areas in different sections of services. In this example, the
 To the office
 -------------
 
-The distance from the stadium lighting poles to the office is about 1,200 feet and has a good line-of-sight condition. We can use CPE510 to build a 5GHz uplink. Since two of the stadium lighting poles are within 45° angle looking from the office, we can set up one CPE510 outside of the office as an access point connecting to two CPE510 on the stadium lighting poles set up as clients.
+The distance from the stadium lighting poles to the office is about 1,200 feet and has a good line-of-sight condition. We can use CPE510 to build a 5GHz uplink. Since two of the stadium lighting poles are within a 45° angle looking from the office, we can set up one CPE510 outside of the office as an access point connecting to two CPE510 on the stadium lighting poles set up as clients.
 
 .. image:: /images/uc_football_cpe.png
     :width: 80%
@@ -28,11 +28,11 @@ The distance from the stadium lighting poles to the office is about 1,200 feet a
 Installation
 ------------
 
-The network topology looked like this:
+The network topology looks like this:
 
 .. image:: /images/uc_football_topo.png
     :width: 80%
     :align: center
 
     * Reference :doc:`/how_to/cpe_onboarding` or  :doc:`/how_to/eap_onboarding` for detail instructions on access point set up.
-    * Remember using a shielded Ethernet cable to connect to the access point and ground the PoE injector proper to provide the best lighting protection.
+    * Remember to use a shielded Ethernet cable to connect to the access point and ground the PoE injector properly to provide the best lighting protection.
