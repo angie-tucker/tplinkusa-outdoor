@@ -1,16 +1,16 @@
 How to calculate the wireless range
 ===================================
 
-A good radio power is required for a successful radio communication. The original emitting radio power was usually marked as Tx power with the unit in dBm. The attached antenna enhance the radio wave with the unit in dBi. The radio wave travels to the destination with attenuation. Gained with the receiving antenna again and finally reaching the receiver. If the receiver sensitivity is good enough, the signal can be successfully transmitted. 
+A good radio power is required for successful radio communication. The original emitting radio power is usually marked as Tx power with the unit in dBm. The attached antenna enhances the radio wave with the unit in dBi. The radio wave travels to the destination with attenuation. Gained with the receiving antenna again and finally reaching the receiver. If the receiver sensitivity is good enough, the signal can be successfully transmitted. 
 
 .. image:: /images/FSPL_Allowance.png
 
-The transmitting power, receiving sensitivity, and antenna gains are known parameters when you choose the devices. The path loss can be the only variable. The path loss can be contributed by the equipment setup, transmitting medium, such as glass or wall,  reflection, deflection or other environmental factors. It is hard to estimate the path loss when the path condition is complicated. In practice, we will choose the clear line-of-sight wireless path to avoid the possible path loss. Then, we can assume the transmitter and the receiver are face to face with no obstacles in between and neglect the factors of the reflection and deflection. Under this condition, the major factor of the path loss is the Free Space Path Loss, FSPL.
+The transmitting power, receiving sensitivity, and antenna gains are known parameters when you choose the devices. The path loss can be the only variable. The path loss can be contributed by the equipment setup, transmitting medium, such as glass or wall,  reflection, deflection or other environmental factors. It is hard to estimate the path loss when the path condition is complicated. In practice, we will choose the clear line-of-sight wireless path to avoid the possible path loss. Then, we can assume the transmitter and the receiver are face to face with no obstacles in between and neglect the factors of the reflection and deflection. Under this condition, the major factors of path loss are the Free Space Path Loss, FSPL.
 
-The radio waves are directional and guided by the antenna. The CPE access point concentrates the waves in a limited angle of the direction. However, the receiver still cannot receive 100% of the transmitted power. As the distance between the transmitter and receiver increases, the receiving percentage decreases. The detailed calculation can be expressed by FSPL formula.
+The radio waves are directional and guided by the antenna. The CPE access point concentrates the waves in a limited direction angle. However, the receiver still cannot receive 100% of the transmitted power. As the distance between the transmitter and receiver increases, the receiving percentage decreases. This detailed calculation can be expressed by the FSPL formula.
 
 .. note:: 
-   **Free Space Path Loss:** The path loss in free space is a radio wave  decreases with distance by the inverse square law. The same amount of power spreads over an area proportional to the square of distance from the source. `External Reference`_ |ExtLink|
+   **Free Space Path Loss:** The path loss in free space is a radio wave decreases with distance by the inverse square law. The same amount of power spreads over an area proportional to the square of distance from the source. `External Reference`_ |ExtLink|
 
    |FSPL|
    
@@ -27,7 +27,7 @@ The radio waves are directional and guided by the antenna. The CPE access point 
 Device characteristics
 ----------------------
 
-Here's the TP-Link outdoor access point wireless characteristics. They are the key factors for good radio signals. On the cell phone, we simply use an average number. If you happen knowing the device you use, you can replace it with the numbers you have.
+Here's the TP-Link outdoor access point wireless characteristics. They are the key factors for good radio signals. On the cell phone, we simply use an average number. If you happen to know the device you use, you can replace it with the numbers you have.
 
 .. table:: Device Radio Characteristics
 
@@ -52,7 +52,7 @@ To find out the communication range, we can figure out the FSPL allowance and th
     :width: 70%
     :align: center
 
-Where the d is the distance in meters and the f is the frequency in MHz.
+Where the "d" is the distance in meters and the "f" is the frequency in MHz.
 
 With all the formula and device parameters, let’s calculate the estimated wireless range.
 
@@ -63,17 +63,17 @@ A good receiving sensitivity on the cell phone is assumed to be -75dB. Sometimes
     Range estimation from an AP to a cell phone
 
 
-From the table, we can find that the transmission from the outdoor access point to the cell phone. It looks pretty good. But, most of the applications we are using today require two way communications. Let’s take a look at the return path.
+From the table, we can find the transmission from the outdoor access point to the cell phone. It looks pretty good. But, most of the applications we are using today require two way communications. Let’s take a look at the return path.
 
 .. figure:: images/cellphone-to-ap.png
 
     Range estimation from a cell phone to an AP
 
-The distance estimation is much shorter because of the radio power provided by the cell phone is usually lower. With a better antenna on the access point, you can still get a better range compare to home wireless routers. The transmit power on the client side can be improved if you have an external wireless adapter on a laptop computer, such as Archer T4U Plus.
+The distance estimation is much shorter because the radio power provided by the cell phone is usually lower. With a better antenna on the access point, you can still get a better range compared to home wireless routers. The transmit power on the client side can be improved if you have an external wireless adapter on a laptop computer, such as Archer T4U Plus.
 
 .. note:: 
-    1. The EAP225-Outdoor is a dual band access point. The 2.4GHz performance is the same as the EAP110-Outdoor and didn’t show on the table separately.
-    2. The outdoor AP sensitivities are set to -80dB for easy presentation. The real radio sensitivity is varied in different protocols it runs on. The range of the sensitivities can be -75dB to -95dB.
+    1. The EAP225-Outdoor is a dual band access point. The 2.4GHz performance is the same as the EAP110-Outdoor and is not shown on the table separately.
+    2. The outdoor AP sensitivities are set to -80dB for easy presentation. The real radio sensitivity is varied in the different protocols it runs on. The range of the sensitivities can be -75dB to -95dB.
 
 The range for a pair of Outdoor CPE
 -----------------------------------
@@ -89,7 +89,7 @@ The maximum range of the CPE wireless bridge was tested in the field and listed 
     | Range | 3 miles | 6 miles | 18 miles |
     +-------+---------+---------+----------+
 
-When you set up a pair of CPE as a wireless bridge. You can set one of the CPE to be the access point and the other CPE as a client to build the bridge. Please reference the the user’s manual for how to set up the CPE.
+When you set up a pair of CPE as a wireless bridge. You can set one of the CPE to be the access point and the other CPE as a client to build the bridge. Please reference the user’s manual for how to set up the CPE.
 
 Outdoor EAP mesh connectivity and maximum range
 -----------------------------------------------
@@ -159,16 +159,16 @@ Electromagnetic conductors, such as a metal plate, is definitely a major blocker
 | Safety Glass-Wire 1.0"      | 13 dB               | 18 dB             |
 +-----------------------------+---------------------+-------------------+
 
-2. How to place your wireless device for optimal reception and performance?
+2. How to place your wireless device for optimal reception and performance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     
-1. Make sure there is no blocker between two wireless devices (Line-of-sight)
-2. Adjust outdoor EAP adjustable antennas 90° to each other in a complex environment. Try different angles to get the best reflection and deflection in the radio path.
+1. Make sure there is no blocker between the two wireless devices (Line-of-sight)
+2. Adjust the outdoor EAP adjustable antennas 90° to each other in a complex environment. Try different angles to get the best reflection and deflection in the radio path.
 
 3. What is Line-of-sight?
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The electromagnetic line-of-sight defined by a `Fresnel zone`_ |ExtLink|. Other than the line that draws from the center point from one access point to another. Any obstacles falling in the Fresnel zone will be considered a blocker of the radio waves. The easiest way to avoid the blockers is elevating  the antenna. The height of the antenna should be good enough to remove blockers in the Fresnel zone.
+The electromagnetic line-of-sight is defined by a `Fresnel zone`_ |ExtLink|. Other than the line drawn from the center point from one access point to another, any obstacles falling in the Fresnel zone will be considered a blocker of the radio waves. The easiest way to avoid the blockers is to elevate the antenna. The height of the antenna should be good enough to remove blockers in the Fresnel zone.
 
 .. image:: /images/line-of-sight.png
     :width: 80%
